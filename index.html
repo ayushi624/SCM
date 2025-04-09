@@ -373,13 +373,9 @@ h2 {
   <!-- 🔳 Navbar -->
   <div class="navbar">
     <div class="nav-left">
-      <div id="menuToggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <i class="fas fa-bars menu-icon"></i>
       <div class="logo">Ghost Mode</div>
-      <div class="nav-links desktop-only">
+      <div class="nav-links">
         <a href="#">Collection</a>
         <a href="#">Shop</a>
         <a href="#">New In</a>
@@ -395,19 +391,6 @@ h2 {
     </div>
   </div>
 
-  <!-- 🚪 Sliding Menu -->
-  <div id="menu" class="sliding-menu">
-    <ul>
-      <li><a href="#">Collection</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">New In</a></li>
-      <li><a href="#">Sale</a></li>
-    </ul>
-  </div>
-
-  <!-- 🌚 Overlay -->
-  <div id="menuOverlay" class="overlay"></div>
-
   <!-- 🎥 Video Section -->
   <div class="video-banner">
     <video autoplay muted loop>
@@ -419,6 +402,7 @@ h2 {
       <a href="#" class="shop-btn">Shop Now</a>
     </div>
   </div>
+  
 
   <!-- 🖼 Banner Image Section -->
   <div class="banner-image">
@@ -434,6 +418,7 @@ h2 {
       <a href="#">Bottoms</a>
     </div>
   </div>
+  
 
   <!-- 🔲 Disconnect Banner -->
   <div class="disconnect-banner">
@@ -462,16 +447,13 @@ h2 {
       <img class="hover-img" src="img/img8.png" alt="Hover 4 On Hover">
     </div>
   </div>
-
   <!-- 🚨 TRASH CULT Banner Section -->
-  <div class="trash-banner">
+<div class="trash-banner">
     <div class="trash-text-overlay">
       <h1>TRASH CULT</h1>
       <a href="#" class="shop-btn">Shop Now</a>
     </div>
   </div>
-
-  <!-- ⭐️ Reviews -->
   <h2>Customer Reviews</h2>
   <p>See what our customers say about us!</p>
 
@@ -491,6 +473,22 @@ h2 {
         <p>"High quality and great support. Totally worth it!"</p>
       </div>
     </div>
+    <div class="review-container">
+        <div class="review-card">
+          <img src="img/img5.png" alt="Customer 1">
+          <div class="review-text">
+            <h3>John Doe</h3>
+            <p>"Amazing experience! The service was top-notch."</p>
+          </div>
+        </div>
+    
+        <div class="review-card">
+          <img src="img/img7.png" alt="Customer 2">
+          <div class="review-text">
+            <h3>Jane Smith</h3>
+            <p>"High quality and great support. Totally worth it!"</p>
+          </div>
+        </div>
 
     <div class="review-card">
       <img src="img/img4.png" alt="Customer 3">
@@ -500,25 +498,6 @@ h2 {
       </div>
     </div>
   </div>
-
-  <!-- 🍔 JS Script -->
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const menu = document.getElementById("menu");
-    const overlay = document.getElementById("menuOverlay");
-
-    menuToggle.addEventListener("click", () => {
-      menuToggle.classList.toggle("active");
-      menu.classList.toggle("open");
-      overlay.classList.toggle("active");
-    });
-
-    overlay.addEventListener("click", () => {
-      menuToggle.classList.remove("active");
-      menu.classList.remove("open");
-      overlay.classList.remove("active");
-    });
-  </script>
 
 </body>
 </html>
