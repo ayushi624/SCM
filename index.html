@@ -82,16 +82,47 @@
 
     /* 🎥 Video Section */
     .video-banner {
-      width: 100%;
-      height: 500px;
-      overflow: hidden;
-    }
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
 
-    .video-banner video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.shop-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: none;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #ffffff;
+}
+
 
     /* 🖼 Banner Image Styling */
     .banner-image {
@@ -150,7 +181,7 @@
     /* 🔲 Disconnect Banner */
     .disconnect-banner {
       position: relative;
-      background-image: url('https://minga-test.myshopify.com/cdn/shop/files/testB-desktop_97957b08-9301-4804-8aaf-87ba8eff8baf.jpg?width=3200');
+      background-image: url('img/banner\ 2.webp');
       background-size: cover;
       background-position: center;
       height: 650px;
@@ -232,7 +263,7 @@
     }
     .trash-banner {
       position: relative;
-background-image: url('https://minga-test.myshopify.com/cdn/shop/files/cover-desktop.jpg?width=3200');
+background-image: url('img/banner3.webp');
 background-size: cover;
 background-position: center;
   height: 500px;
@@ -363,22 +394,27 @@ h2 {
   <!-- 🎥 Video Section -->
   <div class="video-banner">
     <video autoplay muted loop>
-      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      <source src="https://cdn.shopify.com/videos/c/o/v/7faf90fb55a04c619853eab493dd133a.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <div class="video-overlay">
+      <h1>Welcome to Ghost Mode</h1>
+      <a href="#" class="shop-btn">Shop Now</a>
+    </div>
   </div>
+  
 
   <!-- 🖼 Banner Image Section -->
   <div class="banner-image">
-    <img src="https://minga-test.myshopify.com/cdn/shop/files/capas111.jpg?width=3200" alt="Banner" />
+    <img src="img/capas111.webp" alt="Banner" />
   </div>
 
   <!-- 🧱 Two Rectangles Section -->
   <div class="box-section">
-    <div class="box" style="background-image: url('https://cdn.shopify.com/s/files/1/0572/8760/6471/files/08570ED5-00EE-4192-BC21-1A8270164660.jpg?v=1743514441');">
+    <div class="box" style="background-image: url('img/tops.webp');">
       <a href="#">Tops</a>
     </div>
-    <div class="box" style="background-image: url('https://cdn.shopify.com/s/files/1/0572/8760/6471/files/620FB2A8-E504-4795-89B5-B2E22E6FF0E4.jpg?v=1743514442');">
+    <div class="box" style="background-image: url('img/bottoms.webp');">
       <a href="#">Bottoms</a>
     </div>
   </div>
@@ -396,26 +432,26 @@ h2 {
   <div class="hover-image-section">
     <div class="hover-box">
       <img class="default-img" src="img/img1.png" alt="Hover 1">
-      <img class="hover-img" src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_2_540x.jpg?v=1742402491" alt="Hover 1 On Hover">
+      <img class="hover-img" src="img/img2.png" alt="Hover 1 On Hover">
     </div>
     <div class="hover-box">
-      <img class="default-img" src="https://us.mingalondon.com/cdn/shop/files/gritty-sweat-shorts_1_120x.jpg?v=1742402507" alt="Hover 2">
-      <img class="hover-img" src="https://us.mingalondon.com/cdn/shop/files/gritty-sweat-shorts_2_540x.jpg?v=1742402507" alt="Hover 2 On Hover">
+      <img class="default-img" src="img/img3.png" alt="Hover 2">
+      <img class="hover-img" src="img/img4.png" alt="Hover 2 On Hover">
     </div>
     <div class="hover-box">
-      <img class="default-img" src="https://us.mingalondon.com/cdn/shop/files/iron-grey-wash-zip-up-hoodie_1_120x.jpg?v=1742402454" alt="Hover 3">
-      <img class="hover-img" src="https://us.mingalondon.com/cdn/shop/files/iron-grey-wash-zip-up-hoodie_2_540x.jpg?v=1742402454" alt="Hover 3 On Hover">
+      <img class="default-img" src="img/img5.png" alt="Hover 3">
+      <img class="hover-img" src="img/img6.png" alt="Hover 3 On Hover">
     </div>
     <div class="hover-box">
-      <img class="default-img" src="https://us.mingalondon.com/cdn/shop/files/minga-black-wash-t-shirt_1_120x.jpg?v=1742402411" alt="Hover 4">
-      <img class="hover-img" src="https://us.mingalondon.com/cdn/shop/files/minga-black-wash-t-shirt_2_540x.jpg?v=1742402411" alt="Hover 4 On Hover">
+      <img class="default-img" src="img/img7.png" alt="Hover 4">
+      <img class="hover-img" src="img/img8.png" alt="Hover 4 On Hover">
     </div>
   </div>
   <!-- 🚨 TRASH CULT Banner Section -->
 <div class="trash-banner">
     <div class="trash-text-overlay">
       <h1>TRASH CULT</h1>
-      <a href="https://minga-test.myshopify.com/cdn/shop/files/cover-desktop.jpg?width=3200" class="shop-btn">Shop Now</a>
+      <a href="#" class="shop-btn">Shop Now</a>
     </div>
   </div>
   <h2>Customer Reviews</h2>
@@ -423,7 +459,7 @@ h2 {
 
   <div class="review-container">
     <div class="review-card">
-      <img src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_1_120x.jpg?v=1742402491" alt="Customer 1">
+      <img src="img/img1.png" alt="Customer 1">
       <div class="review-text">
         <h3>John Doe</h3>
         <p>"Amazing experience! The service was top-notch."</p>
@@ -431,7 +467,7 @@ h2 {
     </div>
 
     <div class="review-card">
-      <img src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_1_120x.jpg?v=1742402491" alt="Customer 2">
+      <img src="img/img3.png" alt="Customer 2">
       <div class="review-text">
         <h3>Jane Smith</h3>
         <p>"High quality and great support. Totally worth it!"</p>
@@ -439,7 +475,7 @@ h2 {
     </div>
     <div class="review-container">
         <div class="review-card">
-          <img src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_1_120x.jpg?v=1742402491" alt="Customer 1">
+          <img src="img/img5.png" alt="Customer 1">
           <div class="review-text">
             <h3>John Doe</h3>
             <p>"Amazing experience! The service was top-notch."</p>
@@ -447,7 +483,7 @@ h2 {
         </div>
     
         <div class="review-card">
-          <img src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_1_120x.jpg?v=1742402491" alt="Customer 2">
+          <img src="img/img7.png" alt="Customer 2">
           <div class="review-text">
             <h3>Jane Smith</h3>
             <p>"High quality and great support. Totally worth it!"</p>
@@ -455,7 +491,7 @@ h2 {
         </div>
 
     <div class="review-card">
-      <img src="https://us.mingalondon.com/cdn/shop/files/gritty-zip-up-hoodie_1_120x.jpg?v=1742402491" alt="Customer 3">
+      <img src="img/img4.png" alt="Customer 3">
       <div class="review-text">
         <h3>David Wilson</h3>
         <p>"Super fast delivery and amazing products!"</p>
